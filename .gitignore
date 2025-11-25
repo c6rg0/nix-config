@@ -1,0 +1,13 @@
+# Ignore everything
+/*
+
+# Not these files
+!.gitignore
+!README.md
+!configuration.nix
+
+# Nix
+!home-manager/
+!modules/
+!docs/
+
