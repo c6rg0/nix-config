@@ -2,13 +2,13 @@
 
 > Colour scheme = Gruvbox
 
-> Dotfile management = Home-manager
-> Display manager = Ly (terminal based)
-> Window manager = Sway (wayland)
-> Bar = Waybar
-> Terminal = Kitty
-> Text editor = Neovim
-> App launcher = Rofi
+> Dotfile management = Home-manager\
+> Display manager = Ly (terminal based)\
+> Window manager = Sway (wayland)\
+> Bar = Waybar\
+> Terminal = Kitty\
+> Text editor = Neovim\
+> App launcher = Rofi\
 > Info = Fastfetch 
 
 ## Showcase
@@ -18,22 +18,22 @@
 
 > /etc/nixos/configuration.nix
 
-> ~/.config/home-manager/...
-    > home.nix
-> ~/.config/modules/...
-    > sway/
-        > sway.nix
-        > wallpaper.png
-    > kitty/
-        > kitty.nix
-        > current-theme.conf
-    > nvim/
-        > nvim.nix
-        > init.lua <- This is done because I want to use my config file outside of nixos
-    > fastfetch/
-        > fastfetch.nix
-        > sway.png
-    > waybar.nix
+> ~/.config/home-manager/...\
+    > home.nix\
+> ~/.config/modules/...\
+    > sway/\
+        > sway.nix\
+        > wallpaper.png\
+    > kitty/\
+        > kitty.nix\
+        > current-theme.conf\
+    > nvim/\
+        > nvim.nix\
+        > init.lua <- This is done because I want to use my config file outside of nixos\
+    > fastfetch/\
+        > fastfetch.nix\
+        > sway.png\
+    > waybar.nix\
     > rofi.nix
 
 
