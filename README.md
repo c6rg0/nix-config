@@ -18,23 +18,23 @@
 
 * /etc/nixos/configuration.nix
 
-* ~/.config/home-manager/...\
-    * home.nix\
-* ~/.config/modules/...\
-    * sway/\
-        * sway.nix\
-        * wallpaper.png\
-    * waybar\
-        * waybar.nis
-    * kitty/\
-        * kitty.nix\
-        * current-theme.conf\
-    * nvim/\
-        * nvim.nix\
-        * init.lua <- This is done because I want to use my config file outside of nixos\
-    * fastfetch/\
-        * fastfetch.nix\
-        * sway.png\
+* ~/.config/home-manager/...
+    * home.nix
+* ~/.config/modules/...
+    * sway/
+        * sway.nix
+        * wallpaper.png
+    * waybar
+        * waybar.nix
+    * kitty/
+        * kitty.nix
+        * current-theme.conf
+    * nvim/
+        * nvim.nix
+        * init.lua <- Because I want to use my config file outside of nixos,
+    * fastfetch/
+        * fastfetch.nix
+        * sway.png
     * rofi.nix
 
 
