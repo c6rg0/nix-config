@@ -36,6 +36,6 @@
         * fastfetch.nix
         * sway.png
     * rofi.nix
-
+* ~/ssh/config (file)
 
 

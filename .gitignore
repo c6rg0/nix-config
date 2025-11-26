@@ -5,6 +5,7 @@
 !.gitignore
 !README.md
 !configuration.nix
+!config
 
 # Nix
 !home-manager/
