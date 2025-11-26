@@ -25,13 +25,6 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    wlroots_0_19
-    
-    lm_sensors
-    bluez
-    brightnessctl
-    fwupd
-
     kitty
     git
     yazi
@@ -49,8 +42,6 @@
     nodejs_24
     typescript
     sqlitebrowser
-
-    jetbrains-mono
     wl-clipboard
 
     whitesur-cursors

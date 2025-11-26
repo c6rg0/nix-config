@@ -18,7 +18,7 @@
   };
 
   console.keyMap = "uk";
-  networking.hostName = "hostname"; # Define your hostname.
+  networking.hostName = "dell"; # Define your hostname.
   networking.networkmanager.enable = true;
   hardware.bluetooth.enable = true;
   services.printing.enable = false;
@@ -62,8 +62,12 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Hardware related
-    # lm_sensors
-    # fwupd
+    lm_sensors
+    fwupd
+    bluez
+    brightnessctl
+    wlroots_0_19
+    wev
     openssh
     wget
     vim
@@ -95,6 +99,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.aurulent-sans-mono
+    nerd-fonts.symbols-only
   ];
 
   # Start of zsh
