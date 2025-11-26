@@ -4,6 +4,7 @@ wayland.windowManager.sway = {
   checkConfig = false;
   wrapperFeatures.gtk = true; # Fixes common GTK 3 issues
   config = rec {
+    startup = [ { command = "waybar"; } ];
 
     modifier = "Mod4"; # The windows/meta key
     terminal = "kitty"; 
@@ -92,6 +93,15 @@ wayland.windowManager.sway = {
       "${modifier}+Shift+8" = "move container to workspace number 8";
       "${modifier}+Shift+9" = "move container to workspace number 9";
       "${modifier}+Shift+0" = "move container to workspace number 10";
+    
+      "XF86MonBrightnessUp" = "exec brightnessctl set 10%+";
+      "XF86MonBrightnessDown" = "exec brightnessctl set 10%-";
+      
+      "XF86AudioRaiseVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ +2.5%";
+      "XF86AudioLowerVolume" = "exec pactl set-sink-volume @DEFAULT_SINK@ -2.5%";
+
+      "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
+    
     };
   };
 };

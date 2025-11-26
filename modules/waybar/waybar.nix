@@ -71,7 +71,7 @@
 		color: @white;
 		font-family: AurulentSansM Nerd Font Mono, Siji;
 		font-size: 12pt;
-		font-weight: bold;
+		/* font-weight: bold; */
 	}
 	
 	/* Each module */
@@ -337,8 +337,8 @@
       cpu = {
         interval =  5;
         tooltip = false;
-        format = "<span size='18pt'></span>  {usage}%";
-        format-alt = "<span size='18pt'></span>  {load}";
+        format = "<span size='18pt'></span>   {usage}% ";
+        format-alt = "<span size='18pt'></span>   {load} ";
         states = { 
           warning = 70;
           critical = 90;
