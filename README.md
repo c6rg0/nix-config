@@ -3,7 +3,7 @@
 > Colour scheme = Gruvbox
 
 > Dotfile management = Home-manager\
-> Display manager = Ly (terminal based)\
+> Display manager = tuigreet (terminal based)\
 > Window manager = Sway (wayland)\
 > Bar = Waybar\
 > Terminal = Kitty\
@@ -16,26 +16,6 @@
 
 ## File structure
 
-* /etc/nixos/configuration.nix
-
-* ~/.config/home-manager/...
-    * home.nix
-* ~/.config/modules/...
-    * sway/
-        * sway.nix
-        * wallpaper.png
-    * waybar
-        * waybar.nix
-    * kitty/
-        * kitty.nix
-        * current-theme.conf
-    * nvim/
-        * nvim.nix
-        * init.lua <- Because I want to use my config file outside of nixos,
-    * fastfetch/
-        * fastfetch.nix
-        * sway.png
-    * rofi.nix
-* ~/ssh/config (file)
-
+* `nixos/` files go in `/etc/nixos/`,
+* `home-manager/` and `modules/` originaly sit in `~/.config`,
 

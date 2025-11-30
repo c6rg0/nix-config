@@ -1,0 +1,29 @@
+{ config, pkgs, ... }:
+
+{
+  programs.zsh = {
+    enable = true;
+    ohMyZsh = {
+      enable = true;
+      plugins = ["git" "z"];
+    };
+
+    enableCompletion = true;
+    autosuggestions.enable = true;
+    syntaxHighlighting.enable = true;
+    
+    # Theme
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    
+    shellAliases = {
+      ll = "ls -l";
+      bt = "bluetoothctl";
+    };
+
+    histSize = 10000;
+    histFile = "$HOME/.zsh_history";
+    setOptions = [
+      "HIST_IGNORE_ALL_DUPS"
+    ];
+  };
+}

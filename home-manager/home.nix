@@ -19,12 +19,14 @@
     ~/.config/modules/nvim/nvim.nix
     ~/.config/modules/fastfetch/fastfetch.nix
     ~/.config/modules/rofi.nix
+    ~/.config/modules/gtk.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    firefox
     swaylock
     kitty
     git
@@ -52,7 +54,6 @@
     rofi
     qimgv
     ventoy
-    firefox
     libreoffice
     pastel
     spotify
@@ -75,43 +76,8 @@
     TERMINAL = "kitty";
   };
 
-  programs.waybar.enable = true;
   services.dunst.enable = true;  # Notifications
-#  systemd.user.services.myservice = { ... };
+# systemd.user.services.myservice = { ... };
 
-  gtk = {
-    enable = true;
-    
-    theme = {
-      name = "WhiteSur-Dark";
-      package = pkgs.whitesur-gtk-theme;
-    };
-    
-    iconTheme = {
-      name = "WhiteSur";
-      package = pkgs.whitesur-icon-theme;
-    };
-    
-    cursorTheme = {
-      name = "WhiteSur-cursors";
-      package = pkgs.whitesur-cursors;
-    };
-    
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = true;
-    };
-    
-    gtk4.extraConfig = {
-      gtk-application-prefer-dark-theme = true;
-    };
-  };
-  
-  home.pointerCursor = {
-    name = "WhiteSur-cursors";
-    package = pkgs.whitesur-cursors;
-    size = 24;
-    gtk.enable = true;
-    x11.enable = true;
-  };
 }
 
