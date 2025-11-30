@@ -58,6 +58,7 @@
     spotify
     gimp
     csvtool
+    osu-lazer-bin
 
     fastfetch
     btop
