@@ -25,6 +25,7 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
+    swaylock
     kitty
     git
     yazi
@@ -56,10 +57,13 @@
     pastel
     spotify
     gimp
+    csvtool
 
     fastfetch
     btop
     usbutils
+    hyprpicker
+    hyprshot
   ];
 
   nixpkgs.config.permittedInsecurePackages = ["ventoy-1.1.05"];

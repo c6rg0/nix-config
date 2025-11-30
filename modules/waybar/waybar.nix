@@ -25,30 +25,29 @@
 	@define-color blue	#458588;
 	@define-color purple	#b16286;
 	@define-color aqua	#689d6a;
-	@define-color gray	#a89984;
-	@define-color brgray	#928374;
-	@define-color brred	#fb4934;
-	@define-color brgreen	#b8bb26;
-	@define-color bryellow	#fabd2f;
-	@define-color brblue	#83a598;
-	@define-color brpurple	#d3869b;
-	@define-color braqua	#8ec07c;
-	@define-color white	#ebdbb2;
-	@define-color bg2	#504945;
-
+	@define-color gray	#928374;
+	@define-color brgray	#7C6F64;
+	@define-color brred	#9d0006;
+	@define-color brgreen	#79740e;
+	@define-color bryellow	#b57614;
+	@define-color brblue	#076678;
+	@define-color brpurple	#8f3f71;
+	@define-color braqua	#427b58;
+	@define-color white	#f9f5d7;
+	@define-color bg2	#d5c4a1;
 
 	@define-color warning 	@bryellow;
-	@define-color critical	@red;
+	@define-color critical	@brred;
 	@define-color mode	@black;
-	@define-color unfocused	@bg2;
-	@define-color focused	@braqua;
+	@define-color unfocused	@brgray;
+	@define-color focused	@bg2;
 	@define-color inactive	@purple;
-	@define-color sound	@brpurple;
-	@define-color network	@purple;
-	@define-color memory	@braqua;
+	@define-color sound	@red;
+	@define-color network	@bryellow;
+	@define-color memory	@yellow;
 	@define-color cpu	@green;
 	@define-color temp	@brgreen;
-	@define-color layout	@bryellow;
+	@define-color layout	@braqua;
 	@define-color battery	@aqua;
 	@define-color date	@black;
 	@define-color time	@white;
@@ -126,7 +125,7 @@
 
 	/* Workspaces stuff */
 	#workspaces button {
-		font-weight: bold;
+		/* font-weight: bold; */
 		padding-left: 2pt;
 		padding-right: 2pt;
 		color: @white;

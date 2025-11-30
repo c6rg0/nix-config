@@ -30,7 +30,7 @@
       remember_window_size = "no";
       initial_window_width =  1200;
       initial_window_height = 750;
-      window_border_width = "1.5pt";
+      window_border_width = "0pt";
       enabled_layouts = "tall";
       window_padding_width = 0;
       window_margin_width = 2;

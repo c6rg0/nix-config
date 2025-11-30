@@ -4,6 +4,7 @@ wayland.windowManager.sway = {
   checkConfig = false;
   wrapperFeatures.gtk = true; # Fixes common GTK 3 issues
   config = rec {
+    defaultWorkspace = "workspace number 1";
     startup = [ { command = "waybar"; } ];
 
     modifier = "Mod4"; # The windows/meta key
@@ -46,6 +47,8 @@ wayland.windowManager.sway = {
       "${modifier}+Space" = "exec ${menu}";
       "${modifier}+b" = "exec firefox";
       "${modifier}+w" = "exec waybar";
+      "${modifier}+l" = "exec swaylock -c fbf1c7";
+      "${modifier}+s" = "exec hyprshot -m window";
 
       "${modifier}+k" = "kill";
       "${modifier}+f" = "fullscreen";
