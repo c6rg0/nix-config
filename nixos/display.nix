@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 {
   services.greetd = {
@@ -13,6 +13,10 @@
     variant = "";
   };
 
+  hardware.graphics.extraPackages = with pkgs; [
+    # trying to fix `WLR_RENDERER=vulkan sway`
+    vulkan-validation-layers 
+  ];
+ 
   programs.sway.enable = true;
-
 }

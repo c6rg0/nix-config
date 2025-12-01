@@ -5,7 +5,6 @@ wayland.windowManager.sway = {
   wrapperFeatures.gtk = true; # Fixes common GTK 3 issues
   config = rec {
     defaultWorkspace = "workspace number 1";
-    startup = [ { command = "waybar"; } ];
 
     modifier = "Mod4"; # The windows/meta key
     terminal = "kitty"; 

@@ -26,36 +26,34 @@
 
   # Packages that should be installed to the user profile.
   home.packages = with pkgs; [
-    firefox
     swaylock
     kitty
     git
     yazi
-    zip
-    unzip
-    ntfs3g
-    file
 
     zsh
     zsh-powerlevel10k
     zsh-you-should-use
     
-    gcc
+    # gcc
     python3
     nodejs_24
     typescript
     sqlitebrowser
     wl-clipboard
-
+    ventoy
+    ntfs3g
+    
     whitesur-cursors
     whitesur-gtk-theme
     whitesur-icon-theme
 
     rofi
     qimgv
-    ventoy
+    nautilus
     libreoffice
     pastel
+    teams-for-linux
     spotify
     gimp
     csvtool
@@ -63,9 +61,9 @@
 
     fastfetch
     btop
-    usbutils
     hyprpicker
     hyprshot
+    lshw
   ];
 
   nixpkgs.config.permittedInsecurePackages = ["ventoy-1.1.05"];
@@ -77,7 +75,7 @@
   };
 
   services.dunst.enable = true;  # Notifications
-# systemd.user.services.myservice = { ... };
+  
 
 }
 
