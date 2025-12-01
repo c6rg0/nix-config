@@ -14,7 +14,7 @@
 
   imports = [
     ~/.config/modules/sway/sway.nix
-    ~/.config/modules/waybar/waybar.nix
+    ~/.config/modules/waybar.nix
     ~/.config/modules/kitty/kitty.nix
     ~/.config/modules/nvim/nvim.nix
     ~/.config/modules/fastfetch/fastfetch.nix

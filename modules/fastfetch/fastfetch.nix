@@ -57,10 +57,10 @@
 	  type = "localip";
 	  compact = true;
 	}
-	{
+	/* {
 	  type = "publicip";
 	  timeout = 1000;
-	}
+	} */
 	{ type = "custom";
 	  format = "└{$1}──────────────────────{$1}┘";
 	}

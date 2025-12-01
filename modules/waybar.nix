@@ -41,7 +41,7 @@
 	@define-color mode	@black;
 	@define-color unfocused	@brgray;
 	@define-color focused	@bg2;
-	@define-color inactive	@purple;
+	@define-color inactive	@bg2;
 	@define-color sound	@red;
 	@define-color network	@bryellow;
 	@define-color memory	@yellow;

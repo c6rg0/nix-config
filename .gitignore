@@ -4,11 +4,9 @@
 # But not these files
 !.gitignore
 !README.md
-!configuration.nix
-!config
 
 # Nix
 !home-manager/
 !modules/
 !nixos/
-
+!Showcase_images/
