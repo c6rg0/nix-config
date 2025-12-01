@@ -1,5 +1,5 @@
 # My NixOS config:
-*NOTE: I have random things in my home.nix like "osu-lazer-bin", delete them*\ 
+*NOTE: I have random things in my home.nix like "osu-lazer-bin", delete them*
 *as you please, I'll try make it obvious whether a package is important or not.*
 
 > Colour scheme = Gruvbox light
@@ -15,7 +15,11 @@
 > Info-fetcher = Fastfetch 
 
 ## Showcase
-[alt text](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/[branch]/image.jpg?raw=true)
+[desktop](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/trunk/Showcase_images/desktop.png?raw=true)
+
+[fastfetch](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/trunk/Showcase_images/fastfetch.png?raw=true)
+
+[neovim](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/trunk/Showcase_images/neovim.png?raw=true)
 
 ## File structure
 
