@@ -15,11 +15,11 @@
 > Info-fetcher = Fastfetch 
 
 ## Showcase
-[desktop](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/trunk/Showcase_images/desktop.png?raw=true)
+[desktop](Showcase_images/desktop.png)
 
-[fastfetch](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/trunk/Showcase_images/fastfetch.png?raw=true)
+[fastfetch](Showcase_images/fastfetch.png)
 
-[neovim](https://github.com/c6rg0/Gruvbox-NixOS-dotfiles/blob/trunk/Showcase_images/neovim.png?raw=true)
+[neovim](Showcase_images/neovim.png)
 
 ## File structure
 
