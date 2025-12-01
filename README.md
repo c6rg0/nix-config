@@ -18,6 +18,8 @@
 ## Showcase
 ![desktop](Showcase_images/desktop.png)
 
+![rofi](Showcase_images/rofi.png)
+
 ![fastfetch](Showcase_images/fastfetch.png)
 
 ![neovim](Showcase_images/neovim.png)
