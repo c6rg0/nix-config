@@ -15,11 +15,11 @@
 > Info-fetcher = Fastfetch 
 
 ## Showcase
-[desktop](Showcase_images/desktop.png)
+![desktop](Showcase_images/desktop.png)
 
-[fastfetch](Showcase_images/fastfetch.png)
+![fastfetch](Showcase_images/fastfetch.png)
 
-[neovim](Showcase_images/neovim.png)
+![neovim](Showcase_images/neovim.png)
 
 ## File structure
 
