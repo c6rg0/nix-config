@@ -58,6 +58,8 @@
     gimp
     csvtool
     osu-lazer-bin
+    protonup-qt
+    wine
 
     fastfetch
     btop

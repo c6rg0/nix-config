@@ -48,6 +48,7 @@ vim.cmd([[colorscheme gruvbox]])
 require('lualine').setup {
   options = {
     icons_enabled = true,
+
     theme = 'auto',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
@@ -100,8 +101,8 @@ require('lualine').setup {
   extensions = {}
 }
 
--- vim.opt.termguicolors = true
+require('bufferline').setup()
 require('nvim-highlight-colors').setup({})
-
 require("ibl").setup()
+vim.opt.termguicolors = true
 
