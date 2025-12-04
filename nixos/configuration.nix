@@ -13,7 +13,6 @@
     ];
 
   system.stateVersion = "25.05"; # Read the docs before touching!
- 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
@@ -27,8 +26,6 @@
     packages = with pkgs; [];
   };
   
-  security.polkit.enable = true;
-  
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     # Rulses:
@@ -40,31 +37,18 @@
     lm_sensors
     fwupd
     bluez
-    brightnessctl
 
     # Root
     home-manager
-    wlroots_0_19
-    openssh
     
     # Troubleshooting
-    firefox
     vim
     busybox
     unzip
 
   ];
 
-  # environment.variables = { 
-  #   WLR_DRM_DEVICES = "/dev/dri/card0";
-  # };
-
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.aurulent-sans-mono
-    nerd-fonts.symbols-only
-  ];
-
+ 
   programs.steam = {
     enable = true;
   };

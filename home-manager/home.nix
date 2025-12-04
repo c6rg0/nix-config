@@ -65,6 +65,7 @@
     btop
     hyprpicker
     hyprshot
+    wev
     lshw
   ];
 

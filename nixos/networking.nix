@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+    openssh
+  ];
+  
   networking.networkmanager.enable = true;
   hardware.bluetooth.enable = true;
   services.printing.enable = false;
