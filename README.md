@@ -29,6 +29,9 @@
 * `nixos/` files go in `/etc/nixos/`,
 * `home-manager/` and `modules/` originaly sit in `~/.config`,
 
+To make systemd-boot go straight to nixos, edit `/boot/loader/loader.conf`,
+and edit the TIMEOUT to 0. 
+
 
 ## Credits:
 Waybar config = [mxkrsv/dotfiles-old](https://github.com/mxkrsv/dotfiles-old/tree/master/.config/waybar)

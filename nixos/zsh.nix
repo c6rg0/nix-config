@@ -18,6 +18,7 @@
     shellAliases = {
       ll = "ls -l";
       bt = "bluetoothctl";
+      gs = "git status";
     };
 
     histSize = 10000;

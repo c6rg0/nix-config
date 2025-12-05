@@ -62,6 +62,7 @@
     wine
 
     fastfetch
+    onefetch
     btop
     hyprpicker
     hyprshot

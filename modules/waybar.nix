@@ -42,13 +42,13 @@
 	@define-color unfocused	@brgray;
 	@define-color focused	@bg2;
 	@define-color inactive	@bg2;
-	@define-color sound	@red;
+	@define-color sound	@yellow;
 	@define-color network	@bryellow;
-	@define-color memory	@yellow;
-	@define-color cpu	@green;
-	@define-color temp	@brgreen;
-	@define-color layout	@braqua;
-	@define-color battery	@aqua;
+	@define-color memory	@green;
+	@define-color cpu	@brgreen;
+	@define-color temp	@aqua;
+	@define-color layout	@brblue;
+	@define-color battery	@braqua;
 	@define-color date	@black;
 	@define-color time	@white;
 

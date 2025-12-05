@@ -37,6 +37,7 @@
     lm_sensors
     fwupd
     bluez
+    keyd
 
     # Root
     home-manager
