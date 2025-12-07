@@ -3,13 +3,14 @@
 {
   imports = [
     ./hardware-configuration.nix 
-    /* ./nvidia.nix */
+    /*./nvidia.nix */
     ./display.nix
     ./zsh.nix
     ./time_and_keys.nix
     ./networking.nix
     ./audio.nix
     ./tablet.nix
+    ./flatpaks.nix
     ];
 
   system.stateVersion = "25.05"; # Read the docs before touching!
@@ -38,6 +39,7 @@
     fwupd
     bluez
     keyd
+    mesa
 
     # Root
     home-manager
@@ -47,11 +49,13 @@
     busybox
     unzip
 
+    flatpak
+
   ];
 
- 
   programs.steam = {
     enable = true;
   };
 
+  services.flatpak.enable = true;
 }

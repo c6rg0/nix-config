@@ -25,51 +25,52 @@
   nixpkgs.config.allowUnfree = true;
 
   # Packages that should be installed to the user profile.
-  home.packages = with pkgs; [
-    swaylock
-    kitty
-    git
-    yazi
+    home.packages = with pkgs; [
+      swaylock
+      kitty
+      git
+      yazi
+      tmux
 
-    zsh
-    zsh-powerlevel10k
-    zsh-you-should-use
+      zsh
+      zsh-powerlevel10k
+      zsh-you-should-use
     
-    # gcc
-    python3
-    nodejs_24
-    typescript
-    sqlitebrowser
-    wl-clipboard
-    ventoy
-    ntfs3g
+      # gcc
+      python3
+      nodejs_24
+      typescript
+      sqlitebrowser
+      wl-clipboard
+      ventoy
+      ntfs3g
     
-    whitesur-cursors
-    whitesur-gtk-theme
-    whitesur-icon-theme
+      whitesur-cursors
+      whitesur-gtk-theme
+      whitesur-icon-theme
 
-    rofi
-    qimgv
-    nautilus
-    libreoffice
-    pastel
-    teams-for-linux
-    spotify
-    gimp
-    csvtool
-    osu-lazer-bin
-    protonup-qt
-    wine
+      rofi
+      qimgv
+      nautilus
+      libreoffice
+      pastel
+      teams-for-linux
+      spotify
+      gimp
+      
+      osu-lazer-bin
+      protonup-qt
+      wine
 
-    fastfetch
-    onefetch
-    btop
-    hyprpicker
-    hyprshot
-    wev
-    lshw
-  ];
-
+      fastfetch
+      onefetch
+      btop
+      hyprpicker
+      hyprshot
+      wev
+      lshw
+    ];
+  
   nixpkgs.config.permittedInsecurePackages = ["ventoy-1.1.05"];
 
   home.sessionVariables = {

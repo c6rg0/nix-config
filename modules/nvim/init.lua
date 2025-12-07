@@ -9,6 +9,8 @@ vim.call("plug#begin")
 Plug("nvim-tree/nvim-web-devicons")
 Plug("nvim-lualine/lualine.nvim")
 Plug("preservim/nerdtree")
+Plug 'nvim-lua/plenary.nvim'
+Plug("nvim-telescope/telescope.nvim")
 Plug("nvim-treesitter/nvim-treesitter")
 Plug("lukas-reineke/indent-blankline.nvim")
 Plug("ellisonleao/gruvbox.nvim")
@@ -17,6 +19,9 @@ Plug("neoclide/coc.nvim")
 Plug("brenoprata10/nvim-highlight-colors")
 Plug("MeanderingProgrammer/render-markdown.nvim")
 vim.call("plug#end")
+
+local async = require("plenary.async")
+local builtin = require('telescope.builtin')
 
 require("gruvbox").setup({
   terminal_colors = true, -- add neovim terminal colors

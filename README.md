@@ -1,6 +1,8 @@
 # My NixOS config:
 *NOTE: I have random things in my home.nix like "osu-lazer-bin", delete them*
 *as you please, I'll try make it obvious whether a package is important or not.*
+*Also - shell.nix is an example I set up for a beyond simple python project, it's
+*not essential, just a template I/you can use.*
 
 > Colour scheme = Gruvbox light
 
@@ -29,7 +31,7 @@
 * `nixos/` files go in `/etc/nixos/`,
 * `home-manager/` and `modules/` originaly sit in `~/.config`,
 
-To make systemd-boot go straight to nixos, edit `/boot/loader/loader.conf`,
+To make Systemd-boot go straight to nixos, edit `/boot/loader/loader.conf`,
 and edit the TIMEOUT to 0. 
 
 
