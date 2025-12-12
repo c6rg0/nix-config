@@ -19,6 +19,8 @@
       ll = "ls -l";
       bt = "bluetoothctl";
       gs = "git status";
+      wh = "bt connect AC:80:0A:E5:0C:7D";
+      we = "bt connect 2C:76:00:91:26:69";
     };
 
     histSize = 10000;

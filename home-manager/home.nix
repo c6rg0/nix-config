@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 
+let
+  pkgsUnstable = import <nixpkgs-unstable> {};
+
+in
+
 {
 
   home.enableNixpkgsReleaseCheck = false; 
@@ -23,33 +28,40 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = ["ventoy-1.1.05"];
 
   # Packages that should be installed to the user profile.
-    home.packages = with pkgs; [
+    home.packages = with pkgsUnstable;[
       swaylock
-      kitty
       git
       yazi
       tmux
+      hyprpaper
 
       zsh
       zsh-powerlevel10k
       zsh-you-should-use
-    
+
+      emacs-gtk
+      emacsPackages.org
+      emacsPackages.evil
+      emacsPackages.dashboard
+      emacsPackages.centaur-tabs
+      emacsPackages.powerline-evil
+      emacsPackages.gruvbox-theme
+      nixpkgs-review
+      gh
+      killall
       # gcc
       python3
       nodejs_24
       typescript
       sqlitebrowser
       wl-clipboard
-      ventoy
+      # ventoy
       ntfs3g
+      file
     
-      whitesur-cursors
-      whitesur-gtk-theme
-      whitesur-icon-theme
-
-      rofi
       qimgv
       nautilus
       libreoffice
@@ -62,7 +74,6 @@
       protonup-qt
       wine
 
-      fastfetch
       onefetch
       btop
       hyprpicker
@@ -71,8 +82,6 @@
       lshw
     ];
   
-  nixpkgs.config.permittedInsecurePackages = ["ventoy-1.1.05"];
-
   home.sessionVariables = {
     EDITOR = "nvim";
     BROWSER = "firefox";

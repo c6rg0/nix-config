@@ -33,4 +33,9 @@
     nerd-fonts.symbols-only
   ];
 
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
 }

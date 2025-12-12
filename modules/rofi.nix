@@ -3,7 +3,7 @@
 {
   programs.rofi = {
     enable = true;
-    theme = "gruvbox-light-soft";
+    theme = "gruvbox-dark-hard";
 
     extraConfig = {
       modi = "window,drun,run,ssh";

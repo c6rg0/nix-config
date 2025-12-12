@@ -3,7 +3,7 @@
 {
   imports = [
     ./hardware-configuration.nix 
-    /*./nvidia.nix */
+    ./nvidia.nix
     ./display.nix
     ./zsh.nix
     ./time_and_keys.nix
