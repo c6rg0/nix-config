@@ -42,8 +42,8 @@
 	@define-color unfocused	@brgray;
 	@define-color focused	@bg2;
 	@define-color inactive	@bg2;
-	@define-color sound	@yellow;
-	@define-color network	@bryellow;
+	@define-color sound	@bryellow;
+	@define-color network	@yellow;
 	@define-color memory	@green;
 	@define-color cpu	@brgreen;
 	@define-color temp	@aqua;

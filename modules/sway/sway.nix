@@ -1,4 +1,11 @@
+{ config, pkgs, ... }:
+
 {
+
+home.packages = with pkgs; [
+  swaylock
+];
+
 wayland.windowManager.sway = {
   enable = true;
   checkConfig = false;

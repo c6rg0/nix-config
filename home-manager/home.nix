@@ -32,32 +32,24 @@ in
 
   # Packages that should be installed to the user profile.
     home.packages = with pkgsUnstable;[
-      swaylock
       git
       yazi
       tmux
       hyprpaper
 
-      zsh
       zsh-powerlevel10k
       zsh-you-should-use
 
-      emacs-gtk
-      emacsPackages.org
-      emacsPackages.evil
-      emacsPackages.dashboard
-      emacsPackages.centaur-tabs
-      emacsPackages.powerline-evil
-      emacsPackages.gruvbox-theme
       nixpkgs-review
       gh
-      killall
-      # gcc
+      gcc
       python3
       nodejs_24
       typescript
       sqlitebrowser
+      
       wl-clipboard
+      killall
       # ventoy
       ntfs3g
       file
@@ -69,6 +61,7 @@ in
       teams-for-linux
       spotify
       gimp
+      neomutt
       
       osu-lazer-bin
       protonup-qt
@@ -89,7 +82,6 @@ in
   };
 
   services.dunst.enable = true;  # Notifications
-  
 
 }
 
