@@ -31,8 +31,12 @@
 * `nixos/` files go in `/etc/nixos/`,
 * `home-manager/` and `modules/` originaly sit in `~/.config`,
 
-To make Systemd-boot go straight to nixos, edit `/boot/loader/loader.conf`,
-and edit the TIMEOUT to 0. 
+- To make Systemd-boot go straight to nixos, edit `/boot/loader/loader.conf`,
+  and edit the TIMEOUT to 0. 
+- If you execute apply.sh (`./apply.sh`), it'll move all the files to their place, 
+  load the configs and install the packages. 
+    - Please back up your previous config before running it, and don't execute random 
+      scripts from the internet (the script is less than 20 lines long, check it!). 
 
 
 ## Credits:

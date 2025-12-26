@@ -6,6 +6,7 @@
 !README.md
 !HELPME.md
 !shell.nix
+!apply.sh
 
 # Nix
 !home-manager/

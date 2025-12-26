@@ -29,16 +29,14 @@
   
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-    # Rulses:
+    # Rules:
     # Only install things here that require root;
     # Are hardware related;
     # Or are needed if you can't access the user.
 
     #Hardware
     lm_sensors
-    fwupd
     bluez
-    keyd
     mesa
 
     # Root
@@ -50,7 +48,6 @@
     unzip
 
     flatpak
-
   ];
 
   programs.steam = {

@@ -28,7 +28,9 @@ in
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = ["ventoy-1.1.05"];
+  nixpkgs.config.permittedInsecurePackages = [
+                "ventoy-1.1.07"
+              ];
 
   # Packages that should be installed to the user profile.
     home.packages = with pkgsUnstable;[
@@ -36,6 +38,7 @@ in
       yazi
       tmux
       hyprpaper
+      nfs-utils
 
       zsh-powerlevel10k
       zsh-you-should-use
@@ -50,7 +53,7 @@ in
       
       wl-clipboard
       killall
-      # ventoy
+      ventoy
       ntfs3g
       file
     

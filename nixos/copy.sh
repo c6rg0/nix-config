@@ -1,4 +1,4 @@
-#!/run/current-system/sw/bin/bash
+#!/usr/bin/env bash
 
 # List:
 # configuration.nix
@@ -9,6 +9,7 @@
 # networking.nix
 # zsh.nix
 # flatpaks.nix
+# tablet.nix
 
 rm -fv /home/gabriel/.config/nixos/configuration.nix
 rm -fv /home/gabriel/.config/nixos/display.nix
@@ -18,6 +19,7 @@ rm -fv /home/gabriel/.config/nixos/time_and_keys.nix
 rm -fv /home/gabriel/.config/nixos/networking.nix
 rm -fv /home/gabriel/.config/nixos/zsh.nix
 rm -fv /home/gabriel/.config/nixos/flatpaks.nix
+rm -fv /home/gabriel/.config/nixos/tablet.nix
 
 sudo cp -v /etc/nixos/configuration.nix /home/gabriel/.config/nixos/
 sudo cp -v /etc/nixos/display.nix /home/gabriel/.config/nixos/
@@ -27,3 +29,4 @@ sudo cp -v /etc/nixos/time_and_keys.nix /home/gabriel/.config/nixos/
 sudo cp -v /etc/nixos/networking.nix /home/gabriel/.config/nixos/
 sudo cp -v /etc/nixos/zsh.nix /home/gabriel/.config/nixos/
 sudo cp -v /etc/nixos/flatpaks.nix /home/gabriel/.config/nixos/
+sudo cp -v /etc/nixos/tablet.nix /home/gabriel/.config/nixos/
