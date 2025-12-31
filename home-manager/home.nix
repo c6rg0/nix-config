@@ -38,7 +38,6 @@ in
       yazi
       tmux
       hyprpaper
-      nfs-utils
 
       zsh-powerlevel10k
       zsh-you-should-use
@@ -51,7 +50,7 @@ in
       typescript
       sqlitebrowser
       
-      wl-clipboard
+      wl-clipboard-rs
       killall
       ventoy
       ntfs3g
@@ -76,6 +75,8 @@ in
       hyprshot
       wev
       lshw
+      _7zz
+      ghidra
     ];
   
   home.sessionVariables = {
