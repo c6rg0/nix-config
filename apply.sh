@@ -1,14 +1,18 @@
 #!/usr/bin/env bash
 
-sudo mv -v nixos/* /etc/nixos/
+sudo cp -v nixos/* /etc/nixos/
 
 mkdir ~/.config/
 
+sudo nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixpkgs-unstable
+sudo nix-channel --update nixpkgs-unstable
+
 mkdir ~/.config/home-manager/
-mv -v home-manager/* ~/.config/home-manager/
+cp -v home-manager/home.nix ~/.config/home-manager/home.nix
 
 mkdir ~/.config/modules/
-mv -v modules/* ~/.config/modules/
+cp -vrf modules/* ~/.config/modules/
 
-
+export NIXPKGS_ALLOW_UNFREE=1
+home-manager switch
 
