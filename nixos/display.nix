@@ -4,11 +4,7 @@
   services.greetd = {
     enable = true;
     settings.default_session = {
-<<<<<<< HEAD
-      command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd 'sway --unsupported-gpu'";
-=======
       command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'sway --unsupported-gpu'";
->>>>>>> bfb17b1 (Stash)
       user = "gabriel";
     };
   };

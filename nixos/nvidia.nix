@@ -9,11 +9,6 @@
     open = true;
     modesetting.enable = true;
     package = config.boot.kernelPackages.nvidiaPackages.stable;
-<<<<<<< HEAD
-  };
-  
-  hardware.graphics.enable = true;
-=======
     powerManagement.enable = false;
   };
   
