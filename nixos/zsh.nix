@@ -20,6 +20,11 @@
       bt = "bluetoothctl";
       gs = "git status";
       gal = "git add --all";
+<<<<<<< HEAD
+=======
+      ld0 = "swaymsg output eDP-1 disable";
+      ld1 = "swaymsg output eDP-1 enable";
+>>>>>>> bfb17b1 (Stash)
     };
 
     histSize = 10000;

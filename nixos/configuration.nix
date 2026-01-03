@@ -17,6 +17,10 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
+<<<<<<< HEAD
+=======
+  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+>>>>>>> bfb17b1 (Stash)
 
   networking.hostName = "dell";
   users.users.gabriel = {
