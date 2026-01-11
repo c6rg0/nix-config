@@ -10,5 +10,12 @@
     '';
   };
 
+home.packages = with pkgs; [
+  lua-language-server
+  pyright
+  nodePackages.typescript-language-server
+];
+
+
 }
 

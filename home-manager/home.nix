@@ -1,12 +1,6 @@
-{ config, pkgs, ... }:
-
-let
-  pkgsUnstable = import <nixpkgs-unstable> {};
-
-in
+{ config, pkgs, my-modules, ... }:
 
 {
-
   home.enableNixpkgsReleaseCheck = false; 
   home.stateVersion = "25.05";
   programs.home-manager.enable = true;
@@ -18,23 +12,17 @@ in
   xdg.enable = true;
 
   imports = [
-    ~/.config/modules/sway/sway.nix
-    ~/.config/modules/waybar.nix
-    ~/.config/modules/kitty/kitty.nix
-    ~/.config/modules/nvim/nvim.nix
-    ~/.config/modules/fastfetch/fastfetch.nix
-    ~/.config/modules/rofi.nix
-    ~/.config/modules/gtk.nix
+    "${my-modules}/sway/sway.nix"
+    "${my-modules}/waybar.nix"
+    "${my-modules}/kitty/kitty.nix"
+    "${my-modules}/nvim/nvim.nix"
+    "${my-modules}/fastfetch/fastfetch.nix"
+    "${my-modules}/rofi.nix"
+    "${my-modules}/gtk.nix"
   ];
 
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = [
-                "ventoy-1.1.07"
-              ];
-
-
   # Packages that should be installed to the user profile.
-    home.packages = with pkgsUnstable;[
+    home.packages = with pkgs;[
       git
       yazi
       tmux
@@ -46,7 +34,7 @@ in
       nixpkgs-review
       gh
       gcc
-      python3
+      python315
       nodejs_24
       typescript
       sqlitebrowser
@@ -69,6 +57,7 @@ in
       osu-lazer-bin
       protonup-qt
       wine
+      krita
 
       onefetch
       btop
@@ -78,6 +67,8 @@ in
       lshw
       _7zz
       ghidra
+      yt-dlp
+      
     ];
   
   home.sessionVariables = {
@@ -87,6 +78,5 @@ in
   };
 
   services.dunst.enable = true;  # Notifications
-
 }
 

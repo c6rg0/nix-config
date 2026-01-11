@@ -8,20 +8,30 @@ vim.cmd('set number')
 vim.call("plug#begin")
 Plug("nvim-tree/nvim-web-devicons")
 Plug("nvim-lualine/lualine.nvim")
+
 Plug("preservim/nerdtree")
 Plug 'nvim-lua/plenary.nvim'
 Plug("nvim-telescope/telescope.nvim")
+
 Plug("nvim-treesitter/nvim-treesitter")
 Plug("lukas-reineke/indent-blankline.nvim")
 Plug("ellisonleao/gruvbox.nvim")
 Plug("akinsho/bufferline.nvim")
-Plug("neoclide/coc.nvim")
 Plug("brenoprata10/nvim-highlight-colors")
 Plug("MeanderingProgrammer/render-markdown.nvim")
+
+Plug("neovim/nvim-lspconfig")
+Plug("neoclide/coc.nvim")
 vim.call("plug#end")
 
 local async = require("plenary.async")
 local builtin = require('telescope.builtin')
+
+--vim.lsp.lua_ls.setup({})
+--vim.lsp.pyright.setup({})
+--vim.lsp.ts_ls.setup({})
+
+vim.lsp.enable("lua_ls", "pyright", "ts_ls")
 
 require("gruvbox").setup({
   terminal_colors = true, -- add neovim terminal colors
@@ -52,59 +62,52 @@ vim.cmd([[colorscheme gruvbox]])
 
 require('lualine').setup {
   options = {
-    icons_enabled = true,
-
-    theme = 'auto',
-    component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
-    disabled_filetypes = {
-      statusline = {},
-      winbar = {},
+	icons_enabled = true,
+	theme = 'auto',
+	component_separators = {'', ''},
+	section_separators = { left = '', right = '' },
+	disabled_filetypes = {
+	    statusline = {},
+	    winbar = {},
+	},
+	ignore_focus = {},
+	always_divide_middle = true,
+	always_show_tabline = true,
+	globalstatus = false,
+	refresh = {
+	    statusline = 100,
+	    tabline = 100,
+	    winbar = 100,
+	}
     },
-    ignore_focus = {},
-    always_divide_middle = true,
-    always_show_tabline = true,
-    globalstatus = false,
-    refresh = {
-      statusline = 1000,
-      tabline = 1000,
-      winbar = 1000,
-      refresh_time = 16, -- ~60fps
-      events = {
-        'WinEnter',
-        'BufEnter',
-        'BufWritePost',
-        'SessionLoadPost',
-        'FileChangedShellPost',
-        'VimResized',
-        'Filetype',
-        'CursorMoved',
-        'CursorMovedI',
-        'ModeChanged',
-      },
-    }
-  },
-  sections = {
-    lualine_a = {'mode'},
-    lualine_b = {'branch', 'diff', 'diagnostics'},
-    lualine_c = {'filename'},
-    lualine_x = {'fileformat'},
-    lualine_y = {'filetype'},
-    lualine_z = {'location'}
-  },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {'location'},
-    lualine_y = {},
-    lualine_z = {}
-  },
-  tabline = {},
-  winbar = {},
-  inactive_winbar = {},
-  extensions = {}
-}
+    sections = {
+	lualine_a = {'mode'},
+	lualine_b = {'branch'},
+	lualine_c = {},
+	lualine_x = {'filetype'},
+	lualine_y = {'progress'},
+	lualine_z = {'location'}
+    },
+    inactive_sections = {
+	lualine_a = {},
+	lualine_b = {},
+	lualine_c = {'filename'},
+	lualine_x = {},
+	lualine_y = {},
+	lualine_z = {}
+    },
+    tabline = {
+	lualine_a = {},
+	lualine_b = {},
+	lualine_c = {},
+	lualine_x = {},
+	lualine_y = {},
+	lualine_z = {},
+    },
+    winbar = {},
+    inactive_winbar = {},
+    extensions = {}
+  }
 
 require('bufferline').setup()
 require('nvim-highlight-colors').setup({})

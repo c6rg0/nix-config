@@ -19,6 +19,8 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   networking.hostName = "dell";
   users.users.gabriel = {
     isNormalUser = true;

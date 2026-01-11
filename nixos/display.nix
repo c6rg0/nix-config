@@ -32,10 +32,4 @@
     nerd-fonts.aurulent-sans-mono
     nerd-fonts.symbols-only
   ];
-
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-
 }

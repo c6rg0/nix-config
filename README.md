@@ -1,8 +1,8 @@
 # My NixOS config:
 *NOTE: I have random things in my home.nix like "osu-lazer-bin", delete them*
 *as you please, I'll try make it obvious whether a package is important or not.*
-*Also - shell.nix is an example I set up for a beyond simple python project, it's
-*not essential, just a template I/you can use.*
+*Also - shell.nix is an example I set up for an extremely simple python project, 
+*it's not essential, just a template I/you can use.*
 
 > Colour scheme = Gruvbox light
 
@@ -15,6 +15,10 @@
 > Text editor = Neovim\
 > App launcher = Rofi\
 > Info-fetcher = Fastfetch 
+
+- My config also has a successfull nvidia setup for the 
+  1650 (even though sway doesn't support it).
+- I'm also using a flake.nix as a replacement for nix-channel.
 
 
 ## Showcase
@@ -29,14 +33,14 @@
 
 ## File structure
 * `nixos/` files go in `/etc/nixos/`,
-* `home-manager/` and `modules/` originaly sit in `~/.config`,
+* `home-manager/` and `modules/` sit in `~/.config`,
 
 - To make Systemd-boot go straight to nixos, edit `/boot/loader/loader.conf`,
   and edit the TIMEOUT to 0. 
-- If you execute apply.sh (`./apply.sh`), it'll move all the files to their place, 
+- If you execute install.sh (`./install.sh`), it'll move all the files to their place, 
   load the configs and install the packages. 
     - Please back up your previous config before running it, and don't execute random 
-      scripts from the internet (the script is less than 20 lines long, check it!). 
+      scripts from the internet (the script is less than 20 lines long, read it first!). 
 
 
 ## Credits:

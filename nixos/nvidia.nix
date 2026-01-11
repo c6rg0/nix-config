@@ -26,5 +26,4 @@
     NIXOS_OZONE_WL = "1";
     __GL_THREADED_OPTIMIZATION = "1";
   };
->>>>>>> bfb17b1 (Stash)
 }
