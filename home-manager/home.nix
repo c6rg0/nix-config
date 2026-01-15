@@ -26,7 +26,6 @@
       git
       yazi
       tmux
-      hyprpaper
 
       zsh-powerlevel10k
       zsh-you-should-use
@@ -46,7 +45,6 @@
       file
     
       qimgv
-      nautilus
       libreoffice
       pastel
       teams-for-linux
@@ -64,9 +62,7 @@
       hyprpicker
       hyprshot
       wev
-      lshw
       _7zz
-      ghidra
       yt-dlp
       
     ];

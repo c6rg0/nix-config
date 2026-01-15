@@ -129,7 +129,7 @@ wayland.windowManager.sway = {
       "XF86AudioNext" = "exec playerctl next";
     
       "XF86AudioPrev" = "exec playerctl previous";
-    
+
     };
   };
 };

@@ -14,12 +14,19 @@
     ];
 
   system.stateVersion = "25.05"; # Read the docs before touching!
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+    timeout = 0; # This does nothing, in the boot menu, use "shift + t" to disable the boot menu
+  };
+
   boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [ 
+    "nix-command" 
+    "flakes" 
+  ];
 
   networking.hostName = "dell";
   users.users.gabriel = {
