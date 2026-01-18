@@ -102,9 +102,9 @@ require('lualine').setup {
    inactive_sections = {
 	lualine_a = {},
 	lualine_b = {},
-	lualine_c = {},
+	lualine_c = {'filename'},
 	lualine_x = {},
-	lualine_y = {},
+	lualine_y = {'progress'},
 	lualine_z = {}
    },
    tabline = {
