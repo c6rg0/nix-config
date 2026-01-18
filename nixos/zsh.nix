@@ -16,12 +16,11 @@
     promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     
     shellAliases = {
-      ll = "ls -l";
       bt = "bluetoothctl";
       gs = "git status";
-      gal = "git add --all";
       ld0 = "swaymsg output eDP-1 disable";
       ld1 = "swaymsg output eDP-1 enable";
+      py = "python";
     };
 
     histSize = 10000;

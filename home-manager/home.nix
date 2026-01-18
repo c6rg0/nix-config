@@ -32,7 +32,7 @@
 
       nixpkgs-review
       gh
-      gcc
+      binutils
       python315
       nodejs_24
       typescript

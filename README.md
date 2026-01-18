@@ -16,9 +16,9 @@
 > App launcher = Rofi\
 > Info-fetcher = Fastfetch 
 
-- My config also has a successfull nvidia setup for the 
-  1650 (even though sway doesn't support it).
-- I'm also using a flake.nix as a replacement for nix-channel.
+- My config also has a successful nvidia setup for the 
+  1650.
+- I'm using a flake.nix as a replacement for nix-channel.
 
 
 ## Showcase
