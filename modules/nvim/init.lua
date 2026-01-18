@@ -61,7 +61,7 @@ vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
 require('lualine').setup {
-  options = {
+   options = {
 	icons_enabled = true,
 	theme = 'auto',
 	component_separators = {'', ''},
@@ -90,24 +90,24 @@ require('lualine').setup {
 		'CursorMovedI',
 		'ModeChanged',
 	}
-    },
-    sections = {
+	},
+   sections = {
 	lualine_a = {'mode'},
-	lualine_b = {'branch', 'diff', 'diagnostics'},
-	lualine_c = {'filename'},
-	lualine_x = {'filetype'},
-	lualine_y = {'progress'},
+	lualine_b = {'branch', 'diff'},
+	lualine_c = {'diagnostics'},
+	lualine_x = {},
+	lualine_y = {'filetype'},
 	lualine_z = {'location'}
-    },
-    inactive_sections = {
+   },
+   inactive_sections = {
 	lualine_a = {},
 	lualine_b = {},
-	lualine_c = {'filename'},
-	lualine_x = {'location'},
+	lualine_c = {},
+	lualine_x = {},
 	lualine_y = {},
 	lualine_z = {}
-    },
-    tabline = {
+   },
+   tabline = {
 	  lualine_a = {},
 	  lualine_b = {},
 	  lualine_c = {'filename'},
@@ -125,10 +125,11 @@ require('lualine').setup {
 	  lualine_z = {}
 	},
 
-    winbar = {},
-    inactive_winbar = {},
-    extensions = {}
-  }
+   winbar = {},
+   inactive_winbar = {},
+   extensions = {}
+   }
+}
 
 require('bufferline').setup()
 require('nvim-highlight-colors').setup({})
