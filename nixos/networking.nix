@@ -12,6 +12,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   networking.firewall.enable = true;
+  networking.firewall.trustedInterfaces = [ "virbr0" ];
 
   # Instrusion prevention software
   services.fail2ban.enable = true;

@@ -50,7 +50,7 @@
 	@define-color layout	@brblue;
 	@define-color battery	@braqua;
 	@define-color date	@black;
-	@define-color time	@white;
+	@define-color time	@bg2;
 
 	/* Reset all styles */
 	* {

@@ -74,5 +74,6 @@
   };
 
   services.dunst.enable = true;  # Notifications
+
 }
 

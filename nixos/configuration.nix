@@ -21,6 +21,15 @@
   };
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.initrd.kernelModules = [ 
+    "vfio_pci"
+    "vfio"
+    "vfio_iommu_type1"
+
+    "nvidia"
+    "intel_iommu=on"
+    "vfio-pci.ids=1e0f:0001,10de:1f99"
+   ];
   boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
   nix.settings.experimental-features = [ 
@@ -32,7 +41,7 @@
   users.users.gabriel = {
     isNormalUser = true;
     description = "Gabriel";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd"];
     shell = pkgs.zsh;
     packages = with pkgs; [];
   };
@@ -58,6 +67,8 @@
     unzip
 
     flatpak
+    
+    dnsmasq # For virtualisation
   ];
 
   programs.steam = {
@@ -65,4 +76,18 @@
   };
 
   services.flatpak.enable = true;
+
+  programs.virt-manager.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+    };
+  };
+  services.qemuGuest.enable = true;
+  services.spice-vdagentd.enable = true;  
+
 }

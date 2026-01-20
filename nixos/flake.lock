@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1768749864,
-        "narHash": "sha256-EKRMFBLBRCHrFZ5luX85RTnsN3b2q3FjZEi62vXwJBE=",
+        "lastModified": 1768927746,
+        "narHash": "sha256-zyMpWHqcpKVmRc1W2NEK7DAuyVJZV62Jdjqudg70b1k=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5148e08046dc8c74c66b8aee4d302a47d6931b56",
+        "rev": "63a87808f5f9b6e4195a1d33f6ea25d23f4aa0df",
         "type": "github"
       },
       "original": {
@@ -23,8 +23,8 @@
     "my-home": {
       "flake": false,
       "locked": {
-        "lastModified": 1768502970,
-        "narHash": "sha256-AMBHBe/cLZrr0bgiyN1/jLKstP1XEA7Ky0BvGwdIh+I=",
+        "lastModified": 1768933724,
+        "narHash": "sha256-uxfHB7wZ5luUfoBkkl9793VYQX8ErlZyUs5okfwGAA4=",
         "path": "/home/gabriel/.config/home-manager",
         "type": "path"
       },
@@ -36,8 +36,8 @@
     "my-modules": {
       "flake": false,
       "locked": {
-        "lastModified": 1768485203,
-        "narHash": "sha256-pIdG1vx6YPNE0uxSJMii5OR0wLfVWSkVHrxYsjqjoXw=",
+        "lastModified": 1768933609,
+        "narHash": "sha256-meBujz+njv27VQEAuajTYKlw8o5zP2vT3e6oqhPAJWA=",
         "path": "/home/gabriel/.config/modules",
         "type": "path"
       },

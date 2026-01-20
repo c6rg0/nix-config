@@ -31,4 +31,6 @@
     nerd-fonts.aurulent-sans-mono
     nerd-fonts.symbols-only
   ];
+
+
 }
