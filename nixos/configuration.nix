@@ -21,16 +21,19 @@
   };
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.initrd.kernelModules = [ 
+
+  boot.kernelModules = [ 
+    "kvm-intel" 
     "vfio_pci"
     "vfio"
     "vfio_iommu_type1"
+  ];
 
-    "nvidia"
+  boot.kernelParams = [ 
+    "nvidia-drm.modeset=1"
     "intel_iommu=on"
-    "vfio-pci.ids=1e0f:0001,10de:1f99"
-   ];
-  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+    # "vfio-pci.ids=1e0f:0001,10de:1f99"
+  ];
 
   nix.settings.experimental-features = [ 
     "nix-command" 

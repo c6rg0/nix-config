@@ -72,7 +72,7 @@ wayland.windowManager.sway = {
       "${modifier}+k" = "kill";
       "${modifier}+f" = "fullscreen";
       "${modifier}+Escape" = "floating toggle";
-      "${modifier}+a" = "focus parent"; # No clue what this is
+      "${modifier}+Return" = "focus parent"; # No clue what this is
 
       "${modifier}+Minus" = "move scratchpad";
       "${modifier}+Equal" = "scratchpad show";
@@ -92,6 +92,10 @@ wayland.windowManager.sway = {
       "${modifier}+Shift+Up" = "move up";
       "${modifier}+Shift+Right" = "move right";
 
+      # Pane management
+      "${modifier}+h" = "splitv";
+      "${modifier}+v" = "splith";
+      
       # Switch to workspace
       "${modifier}+1" = "workspace number 1";
       "${modifier}+2" = "workspace number 2";

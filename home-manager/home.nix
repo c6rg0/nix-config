@@ -64,6 +64,8 @@
       wev
       _7zz
       yt-dlp
+      zathura
+      spicetify-cli
       
     ];
   
