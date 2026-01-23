@@ -65,8 +65,7 @@
       _7zz
       yt-dlp
       zathura
-      spicetify-cli
-      
+      qutebrowser
     ];
   
   home.sessionVariables = {

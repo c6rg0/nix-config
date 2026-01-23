@@ -43,7 +43,7 @@ wayland.windowManager.sway = {
 	res = "1920x1080";
       };
       "*" = {
-	bg = "/home/gabriel/.config/modules/sway/wallpaper.jpg fill";
+	bg = "/home/gabriel/.config/modules/sway/wallpaper.png fill";
       };
     };
 
