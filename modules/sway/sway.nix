@@ -13,7 +13,6 @@ programs.swaylock = {
     font-size = 24;
     indicator-idle-visible = false;
     indicator-radius = 100;
-    line-color = "ffffff";
     show-failed-attempts = true;
   };
 };
@@ -66,8 +65,10 @@ wayland.windowManager.sway = {
       "${modifier}+Space" = "exec ${menu}";
       "${modifier}+b" = "exec firefox";
       "${modifier}+w" = "exec waybar";
-      "${modifier}+l" = "exec swaylock -c fbf1c7";
+      "${modifier}+l" = "exec swaylock -c 282828";
       "${modifier}+s" = "exec hyprshot -m window";
+
+      "${modifier}+p" = "exec exec wtype '|'";
 
       "${modifier}+k" = "kill";
       "${modifier}+f" = "fullscreen";
