@@ -72,6 +72,7 @@
     flatpak
     
     dnsmasq # For virtualisation
+    wtype 
   ];
 
   programs.steam = {

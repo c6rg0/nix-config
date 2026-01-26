@@ -66,9 +66,11 @@ wayland.windowManager.sway = {
       "${modifier}+b" = "exec firefox";
       "${modifier}+w" = "exec waybar";
       "${modifier}+l" = "exec swaylock -c 282828";
-      "${modifier}+s" = "exec hyprshot -m window";
 
+      # Symbols used for programming
       "${modifier}+p" = "exec exec wtype '|'";
+      "${modifier}+s" = "exec exec wtype '\'";
+      "${modifier}+Shift+Escape" = "exec exec wtype '`'";
 
       "${modifier}+k" = "kill";
       "${modifier}+f" = "fullscreen";
