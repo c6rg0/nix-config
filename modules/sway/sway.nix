@@ -75,13 +75,12 @@ wayland.windowManager.sway = {
       "${modifier}+k" = "kill";
       "${modifier}+f" = "fullscreen";
       "${modifier}+Escape" = "floating toggle";
-      "${modifier}+Return" = "focus parent"; # No clue what this is
+      #"${modifier}+Return" = "focus parent"; # No clue what this is
 
       "${modifier}+Minus" = "move scratchpad";
       "${modifier}+Equal" = "scratchpad show";
       
       "${modifier}+Shift+r" = "reload";
-      "${modifier}+Shift+Escape" = "exec swaynag";
 
       # Move your focus around
       "${modifier}+Left" = "focus left";
@@ -131,11 +130,15 @@ wayland.windowManager.sway = {
 
       "XF86AudioMute" = "exec pactl set-sink-mute @DEFAULT_SINK@ toggle";
 
-      "XF86AudioPlay" = "exec playerctl play-pause";
-      
-      "XF86AudioNext" = "exec playerctl next";
-    
       "XF86AudioPrev" = "exec playerctl previous";
+      "${modifier}+numbersign" = "exec playerctl previous";
+      
+      "XF86AudioPlay" = "exec playerctl play-pause";
+      "${modifier}+Return" = "exec playerctl play-pause";
+
+      "XF86AudioNext" = "exec playerctl next";
+      "${modifier}+Shift_R" = "exec playerctl next";
+      
 
     };
   };
