@@ -13,7 +13,6 @@
     enable = true;
     extraPackages = with pkgs; [
       vulkan-validation-layers
-      amkdvlk
     ];
   };
 

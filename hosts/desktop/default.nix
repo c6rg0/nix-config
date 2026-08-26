@@ -9,13 +9,12 @@
     ../../nixos/display.nix
     ../../nixos/networking.nix
     ../../nixos/tablet/module.nix
-    ../../nixos/tablet.nix
     ../../nixos/locale.nix
     ../../nixos/shell.nix
   ];
 
-  networking.hostName = "pc";
+  networking.hostName = "desktop";
   system.stateVersion = "25.11"; # keep whatever yours currently is
 
-  services.displayManager.ly.enable
+  services.displayManager.ly.enable = true;
 }
